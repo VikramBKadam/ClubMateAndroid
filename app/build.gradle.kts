@@ -19,16 +19,19 @@ android {
         versionName = "1.0"
 
         buildConfigField("String", "API_BASE_URL", "\"http://10.0.2.2:3000\"")
+        buildConfigField("Boolean", "MOCK_MODE", "true")
     }
 
     buildTypes {
         debug {
             buildConfigField("String", "API_BASE_URL", "\"http://10.0.2.2:3000\"")
+            buildConfigField("Boolean", "MOCK_MODE", "true")
         }
         release {
             isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             buildConfigField("String", "API_BASE_URL", "\"https://api.clubmates.app\"")
+            buildConfigField("Boolean", "MOCK_MODE", "false")
         }
     }
 
