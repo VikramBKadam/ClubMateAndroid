@@ -7,6 +7,8 @@ local.properties
 *.keystore
 *.jks
 .DS_Store
+backend/.env
+backend/node_modules/
 captures/
 .externalNativeBuild/
 .cxx/
