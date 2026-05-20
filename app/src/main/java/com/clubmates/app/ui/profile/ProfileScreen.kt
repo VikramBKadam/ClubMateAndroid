@@ -70,6 +70,7 @@ fun ProfileScreen(
     }
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun ProfileContent(profile: UserProfile) {
     Column(

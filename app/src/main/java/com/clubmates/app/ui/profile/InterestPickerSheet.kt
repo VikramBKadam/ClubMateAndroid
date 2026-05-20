@@ -23,7 +23,7 @@ private val ALL_INTERESTS = listOf(
     "Cooking", "Baking", "Meditation", "Astrology", "Board Games", "Karaoke"
 )
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
 fun InterestPickerSheet(
     selected: Set<String>,
